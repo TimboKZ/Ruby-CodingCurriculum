@@ -1,1 +1,17 @@
-site_name: Group X Ruby
+site_name: Ruby in Japan
+pages:
+- Indtroduction: index.md
+- First Challenge:
+    - 'Outline': 'challenge-1/index.md'
+    - 'Working with variables and types': 'challenge-1/variables-types.md'
+    - 'Getting user input': 'challenge-1/getting-input.md'
+    - 'Built-in': 'challenge-1/built-in-methods.md'
+    - 'First attempt at the game': 'challenge-1/first-attempt.md'
+    - 'Loops': 'challenge-1/loops.md'
+    - 'Arrays': 'challenge-1/arrays.md'
+    - 'Hashes': 'challenge-1/hashes.md'
+    - 'Scopes': 'challenge-1/scopes.md'
+    - 'Creating a skeleton for the game': 'challenge-1/creating-skeleton.md'
+    - 'Completing challenge #1': 'challenge-1/completing-challenge.md'
+- Second Challenge: challenge-2/index.md
+theme: readthedocs
