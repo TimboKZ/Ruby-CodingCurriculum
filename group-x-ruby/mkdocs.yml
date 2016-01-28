@@ -1,6 +1,6 @@
-site_name: Ruby in Japan
+site_name: hello
 pages:
-- Indtroduction: index.md
+- Introduction: index.md
 - First Challenge:
     - 'Outline': 'challenge-1/index.md'
     - 'Working with variables and types': 'challenge-1/variables-types.md'
@@ -13,5 +13,11 @@ pages:
     - 'Scopes': 'challenge-1/scopes.md'
     - 'Creating a skeleton for the game': 'challenge-1/creating-skeleton.md'
     - 'Completing challenge #1': 'challenge-1/completing-challenge.md'
-- Second Challenge: challenge-2/index.md
+- Second Challenge:
+    - 'Outline': 'challenge-2/index.md'
+    - 'Basis of OOP': 'challenge-2/OOP.md'
+    - 'Classes and Objects': 'challenge-2/classes.md'
+    - 'Encapsulation': 'challenge-2/encapsulation.md'
+    - 'Inheritance': 'challenge-2/inheritance.md'
+    - 'Polymorphism': 'challenge-2/polymorphism.md'
 theme: readthedocs
