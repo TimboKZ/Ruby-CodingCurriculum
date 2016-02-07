@@ -2,7 +2,7 @@
 
 #The Core API
 
-In order to make thing easier for us, Ruby comes equipped with a vast amount of built-in functions (or methods). As you may have noticed when you were learning about Arrays(hyperlink leads to Array page here), there are things you can do such as append another element to the end of the array or get an element out of the array. For example:
+In order to make thing easier for us, Ruby comes equipped with a vast amount of built-in functions (or methods). As you may have noticed when you were learning about [Arrays](arrays.md), there are things you can do such as append another element to the end of the array or get an element out of the array. For example:
 
     an_array = [1,2,3,4,5]
     puts an_array
@@ -30,7 +30,7 @@ We get
     6
 
 You can also reverse with <span style="color:red">an_array.reverse</span> and many more.  
-These are built in methods of the __Core API__ (let's understand it as a library), which doesn't require you to import anything extra to use it, every class has it's own built in functions such as String, Hash, etc...
+These are built in methods of the __Core API__ (let's understand API as a collection of libraries), which doesn't require you to import anything extra to use it, every class such as String, Hash, etc...(more on this later) has it's own built in functions.
 
 ##The Standard Library
 
