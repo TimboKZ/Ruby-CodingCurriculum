@@ -50,5 +50,6 @@ You are asked to calculate the square root of a complex number, there are 2 ways
 
 ----------
 
-"How do I know whether I should use the Core or Standard Library?" You might ask. The answer is rather unexciting, you need to read the [Ruby Documentation](http://ruby-doc.org). Thankfully, libraries and functions are named in a straight forward manner such as date and time related functions are all in a library called DateTime.  
+"How do I know whether I should use the Core or Standard Library?" You might ask. The answer is rather unexciting, you need to read the [Ruby Documentation](http://ruby-doc.org). Thankfully, libraries and functions are named in a straight forward manner such as date and time related functions are all in a library called DateTime. 
+ 
 This is actually how programmers work, most of their time is spent reading the documentation of the language they are using to look for that required function.
