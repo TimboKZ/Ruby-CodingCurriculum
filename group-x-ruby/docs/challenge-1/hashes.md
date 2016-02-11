@@ -14,6 +14,8 @@ Now we can create the array itself and access the population of different cities
 
     populationInMillions = Array[1.474473, 2.666371, 8.949447]
 
+And now we can use this array as follows:
+
     // Outputs the population of Kyoto
     puts populationArray[0]
 
@@ -26,3 +28,15 @@ The major downside to using this method is that you have to assign each city to 
 
     // Outputs the population of Osaka
     puts populationInMillions["Osaka"]
+
+## Creating hashes
+
+The easiest way to create hashes is to create an empty hash:
+
+    myHash = Hash.new
+
+Now that we have created a new hash, we can add and read information from it:
+
+    myHash["colour"] = "red"
+    puts myHash["colour"]
+
