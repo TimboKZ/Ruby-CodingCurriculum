@@ -12,7 +12,7 @@ Consider this problem: You need to make some data structure which will hold the 
 
 Now we can create the array itself and access the population of different cities:
 
-    populationInMillions = Array[1.474473, 2.666371, 8.949447]
+    population_in_millions = Array[1.474473, 2.666371, 8.949447]
 
 And now we can use this array as follows:
 
@@ -24,19 +24,19 @@ And now we can use this array as follows:
 
 The major downside to using this method is that you have to assign each city to an integer, and whoever will be using your array in the future has to know what exactly each integer represents. Here is where hashes come into play - since you can use any object as the hash index, you can simply use strings instead of integers:
 
-    populationInMillions = Hash["Kyoto" => 1.474473, "Osaka" => 2.666371, "" => 8.949447]
+    population_in_millions = Hash["Kyoto" => 1.474473, "Osaka" => 2.666371, "" => 8.949447]
 
     # Outputs the population of Osaka
-    puts populationInMillions["Osaka"]
+    puts population_in_millions["Osaka"]
 
 ## Creating hashes
 
 The easiest way to create hashes is to create an empty hash:
 
-    myHash = Hash.new
+    my_hash = Hash.new
 
 Now that we have created a new hash, we can add and read information from it:
 
-    myHash["colour"] = "red"
-    puts myHash["colour"]
+    my_hash["colour"] = "red"
+    puts my_hash["colour"]
 
