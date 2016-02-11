@@ -16,17 +16,17 @@ Now we can create the array itself and access the population of different cities
 
 And now we can use this array as follows:
 
-    // Outputs the population of Kyoto
+    # Outputs the population of Kyoto
     puts populationArray[0]
 
-    // Outputs the population of Osaka
+    # Outputs the population of Osaka
     puts populationArray[0]
 
 The major downside to using this method is that you have to assign each city to an integer, and whoever will be using your array in the future has to know what exactly each integer represents. Here is where hashes come into play - since you can use any object as the hash index, you can simply use strings instead of integers:
 
     populationInMillions = Hash["Kyoto" => 1.474473, "Osaka" => 2.666371, "" => 8.949447]
 
-    // Outputs the population of Osaka
+    # Outputs the population of Osaka
     puts populationInMillions["Osaka"]
 
 ## Creating hashes
