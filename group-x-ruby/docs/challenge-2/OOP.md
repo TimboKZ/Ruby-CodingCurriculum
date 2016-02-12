@@ -6,7 +6,15 @@ __Ruby__ is a pure Object Oriented Programming Language (OOP), that means that e
 If programming is building a house, then a `class` would be the blueprint and the `object` would be the house or an _instance_ of a class.
 ### Class
 
-A class specifies the variables(what it's object has) and methods(what it's object does), for example a pet dog class would have:
+A class specifies the variables(what it's object has) and methods(what it's object does). To create a class, you need type:
+
+    class class_name
+
+        include anything related to the class here
+
+    end
+
+ For example a pet dog class would have:
 
     class Dog
 
@@ -59,12 +67,20 @@ In OOP it is good practice to always have constructor, getter and setter methods
     a_string.reverse # olleH
 ### Objects
 
-An object is created(instantiated) from a class. Using the class `Dog` above, we can create a dog:
+An object is created(instantiated) from a class. To instantiate an object, you type:
+
+    object = class.new()
+
+and the object `object` will have whatever is declared in the class `class`. For example if there is a function `foo()` defined in `class`, we can use it on the `object` by:
+
+    object.foo()
+
+ Using the class `Dog` above, we can create a dog:
 
     pet = Dog.new("Alex", "Husky", 10) # Create a pet Dog
 
     # Getter
-
+    # puts is used to display on the screen
     puts pet.name # Alex
     puts pet.species # Husky
     puts pet.age # 10

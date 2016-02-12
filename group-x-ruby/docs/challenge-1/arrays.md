@@ -110,3 +110,18 @@ The output is:
 ---
 	[1, 2, 3, 4]
 ---
+
+### Accessing array
+To access a particular element of an array, you type:
+
+    n = Array[1, 2, 3, 4]
+    n[2]
+    # alternatively
+    n.at(2)
+
+Array is kind of an oddball in programming. You would expect the last 2 lines of code to give you the second element in the array which is 2. __WRONG!!!__ It will return the third value in the array `n` which is 3.
+Array index it's elements starting from 0, this is not due to Ruby being special but a standard created by the first computer scientists a long time ago. Therefore,
+
+    n[0]
+
+will give you 1.
