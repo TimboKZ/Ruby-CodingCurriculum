@@ -29,7 +29,7 @@ We get
     5
     6
 
-You can also reverse with <span style="color:red">an_array.reverse</span> and many more.  
+You can also reverse with `an_array.reverse` and many more.
 These are built in methods of the __Core API__ (let's understand API as a collection of libraries), which doesn't require you to import anything extra to use it, every class such as String, Hash, etc...(more on this later) has it's own built in functions.
 
 ##The Standard Library
@@ -38,7 +38,7 @@ Sometimes you will encounter situations where there's no function in the Core li
 
     require "standard_library_name"
 
-"standard_library_name" can be any library that you require to complete the task.
+`standard_library_name` can be any library that you require to complete the task.
 For example: 
 You are asked to calculate the square root of a complex number, there are 2 ways to go about doing it:
 >1. You go and create a method that will take in a number (i.e. -1) or a complex number and return the square root of it. __Highly NOT recommended.__
@@ -50,6 +50,6 @@ You are asked to calculate the square root of a complex number, there are 2 ways
 
 ----------
 
-"How do I know whether I should use the Core or Standard Library?" You might ask. The answer is rather unexciting, you need to read the [Ruby Documentation](http://ruby-doc.org). Thankfully, libraries and functions are named in a straight forward manner such as date and time related functions are all in a library called DateTime. 
+"How do I know whether I should use the Core or Standard Library?" You might ask. The answer is rather unexciting, you need to read the [Ruby Documentation](http://ruby-doc.org). Thankfully, libraries and functions are named in a straight forward manner such as date and time related functions are all in a library called `DateTime`.
  
 This is actually how programmers work, most of their time is spent reading the documentation of the language they are using to look for that required function.
