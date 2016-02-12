@@ -55,7 +55,7 @@ here is the plan of the quiz:
 
 So, lets start building :) !!
 
-  puts "1. Hallo"
+    puts "1. Hallo"
     puts "2. Konichiwa"
     puts "3. Oyasumi"
     puts "4. Itadakimasu"
@@ -66,9 +66,103 @@ now look at the code above, you probably already know what it is supposed to do.
 question in the quiz which is then followed by a line break.
 
 Save this code in your editor and lets continue.
+(you can run the program to see the actual output. just double click on saved file)
+----------
+what we want to do next is declare a couple of global variables
+
+    $questionNumber = 1
+    $score = 0
+
+write this code prior to what you have already written, this will declare two global variables, one will keep track of the questionNumber the user is currently on
+and the other will keep the score.
+
+----------
+to ease the process of building a quiz we are going to use functions
+so lets write these two functions
+
+    def nextQuestion
+      print "#{$questionNumber}. "
+      $questionNumber += 1
+    end
+
+the function above will increment the global variable that keeps track of the question number as well as outputting the current number.
+This means that we wouldnt have to write the question number our selves and more questions can be easily added at any time.
+
+    def processAnswer(choice, num)
+      puts
+      if choice==num
+     $score += 1
+     puts "correct"
+      else
+    puts "INCORRECT"
+      end
+      puts
+    end
+
+This second function takes two parameters, one will be the choice that the user has selected as the answer and the other will be the actual answer.
+
+Now what this function will actually do is compare both values and if they match, the function will output "correct" and increment the users score. If the values dont match however, the output will be "INCORRECT" and the score wont be incremented.
+
 ----------
 
+Now you have learned how to use input and output, so after outputing the first set of questions, insert this code
 
+    choice = gets.to_i
+
+now what this will do is set a variable named choice, which will hold the users input, to what the input actually is (converted to an integer type using .to_i)
+
+----------
+
+lets put everything together and make the first quiz question.
+
+    $questionNumber = 1
+    $score = 0
+
+    def nextQuestion
+      print "#{$questionNumber}. "
+      $questionNumber += 1
+    end
+
+    def processAnswer(choice, num)
+      puts
+      if choice==num
+     $score += 1
+     puts "correct"
+      else
+    puts "INCORRECT"
+      end
+      puts
+    end
+
+    nextQuestion
+    puts "How do you say \"Hello\" in Japanese?"
+    puts
+
+    puts "1. Hallo"
+    puts "2. Konichiwa"
+    puts "3. Oyasumi"
+    puts "4. Itadakimasu"
+    puts "5. Ja Mate"
+    puts
+
+    choice = gets.to_i
+
+    processAnswer(choice, 2)
+
+look at the code above, as you can see we made use of functions like processAnswer(choice, 2) and nextQuestion, this code shouldnt be difficult to understand.
+
+you might have noticed that Hello has \" written instead of just ", now this is because ruby will think that we want to end quotation marks if we just use ", so we say \" to tell ruby that its just a character to be outputted on screen.
+
+now try the same with the next two questions.
+----------
+
+Once you have done everything it is just the ending that is left.
+
+    puts "You got #{$score} in the quiz correct"
+
+    $end
+
+enter this code so that  user will get the output of his/her score. The $end will make sure ruby terminates.
 
 # The Final Code
 
