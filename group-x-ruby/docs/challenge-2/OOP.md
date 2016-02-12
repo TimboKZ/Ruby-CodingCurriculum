@@ -52,6 +52,11 @@ A class specifies the variables(what it's object has) and methods(what it's obje
 As you can see, any variable with two '@' before it `@@number_of_legs` is a class variable. It is shared by all instances(objects) of this class. A dog should always have 4 legs, a name, age, species and the ability to bark which we will display "bark" 3 times.
 In OOP it is good practice to always have constructor, getter and setter methods in a class for ease of well... constructing an object. A _constructor_ method is used as a way to quickly create an object of the class by injecting the variable values of the class as parameter of the method. _Getter_ methods will get the values of the variable
  and _setter_ methods will set/change the value of the variables.
+
+ Since everything is a class in Ruby, you may have noticed how you can use so called "built-in methods" with things like arrays and string.
+
+    a_string = "Hello"
+    a_string.reverse # olleH
 ### Objects
 
 An object is created(instantiated) from a class. Using the class `Dog` above, we can create a dog:
