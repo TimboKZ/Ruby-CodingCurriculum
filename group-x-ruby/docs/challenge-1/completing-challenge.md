@@ -42,7 +42,7 @@ lets now set these variables
 So to check if the answer is correct we are going to need a method. This method will use the advantages of hashes to determine if the user entered the correct answer
 
     def processAnswer
-      if $corectAnswers.fetch(gets) == 1
+      if $correctAnswers[gets.chomp] == 1
        $score += 1
        puts "correct"
       else
@@ -89,7 +89,7 @@ now were are going to finish the code exactly like last time.
     $correctAnswers.default = 0
 
     def processAnswer
-      if $corectAnswers.fetch(gets) == 1
+      if $correctAnswers[gets.chomp] == 1
        $score += 1
        puts "correct"
       else
