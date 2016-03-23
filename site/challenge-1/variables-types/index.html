@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Working with variables - Group X Ruby</title>
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Working with variables";
+    var mkdocs_page_input_path = "challenge-1/variables-types.md";
+    var mkdocs_page_url = "/challenge-1/variables-types/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Group X Ruby</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Introduction</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Getting Started</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting-started/">Installation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting-started/scripts/">Running scripts</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>First Challenge</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../">Outline</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Working with variables</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#variables-in-ruby">Variables in Ruby</a></li>
+                
+                    <li><a class="toctree-l4" href="#a-quick-example">A quick example</a></li>
+                
+                    <li><a class="toctree-l4" href="#naming-conventions">Naming conventions</a></li>
+                
+                    <li><a class="toctree-l4" href="#what-are-variables-useful-for">What are variables useful for?</a></li>
+                
+                    <li><a class="toctree-l4" href="#some-examples-for-you-to-try">Some examples for you to try</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../getting-input/">Output and user input</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../first-attempt/">First attempt at the game</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../loops/">Loops</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../arrays/">Arrays</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../hashes/">Hashes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../scopes/">Scopes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../built-in-methods/">Built-in methods</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../creating-skeleton/">Creating a skeleton for the game</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../completing-challenge/">Completing challenge #1</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Second Challenge</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../challenge-2/">Outline</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../challenge-2/OOP/">Basics of OOP</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../challenge-2/encapsulation/">Inheritance, encapsulation and polymorphism</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Group X Ruby</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>First Challenge &raquo;</li>
+        
+      
+    
+    <li>Working with variables</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="variables-in-ruby">Variables in Ruby</h1>
+<p>In Ruby you store all of your information, such as numbers and strings, in variables. There are several types of variables used in Ruby and this part of challenge #1 will introduce you to all of them.</p>
+<h3 id="a-quick-example">A quick example</h3>
+<p>Below you can find a simple example of usage of variables, don't try to think about too much yet - we'll explain how exactly it works later.</p>
+<pre><code>first_variable = "Some Value"
+integer_variable = 1
+</code></pre>
+<p>The code above simply means that the variable with the name <code>first_variable</code> now holds a value of <code>Some Value</code>, which is a string. <code>integer_variable</code> on the other holds value of <code>1</code>, which, as the name implies, is an integer. As you can see any variable in Ruby can hold any value, regardless of its type - whether it is a decimal number, integer, string or even a collection of strings (don't worry about them for now, we'll talk about them in other tutorials).</p>
+<blockquote>
+<p><em>The process of assigning a value to a variable is referred to as <strong>initialising</strong>. For example, assigning a value of <code>10</code> to a variable named <code>box_size</code> can be called initialising variable <code>box_size</code> to <code>10</code>.</em></p>
+</blockquote>
+<p>I want to quickly introduce a simple function called <code>puts</code>. You will learn more about it in the next chapter about output, but for now all you need to know is that this function prints the value of the variable supplied to it. Consider this example:</p>
+<pre><code># Define some variable
+my_variable = 1234
+
+# This function will output the value of my_variable
+puts my_variable
+# Outputs "1234"
+</code></pre>
+<p>We will use the <code>puts</code> function to see the values currently stored in our variables.</p>
+<h3 id="naming-conventions">Naming conventions</h3>
+<p>In the example above you might've noticed that each variable must have a name. In Ruby, there are specific coding conventions regarding the way you name strings, but do not worry, they are quite straight forward:</p>
+<ul>
+<li>First of all, the variable names are <strong>case-sensitive</strong>. This means that <code>VaRiAbLe</code> and <code>variable</code> are considered to be 2 different variables.</li>
+<li>Secondly, variable names must only contain alphanumeric characters or underscores (<code>_</code>). That is to say you can only use letters A to Z, digits 0 to 9 and the <code>_</code> symbol when naming a variable.</li>
+<li>A variable name cannot begin from a capital letter.</li>
+</ul>
+<p>For now, following these points will suffice. At a later stage we will introduce you to a couple more concepts in variable naming and different variable types.</p>
+<blockquote>
+<p><strong>Note</strong>: To make your variable names more descriptive try composing them from several words separated by underscores, i.e.:</p>
+</blockquote>
+<pre><code># Price of a single car in pounds
+car_price_in_GBP = 400
+</code></pre>
+<h3 id="what-are-variables-useful-for">What are variables useful for?</h3>
+<blockquote>
+<p><em>To simplify the learning process for now let's only consider variables that store numbers for now.</em></p>
+</blockquote>
+<p>You can do various manipulations with variables. For now, let's focus on the basic operations such as addition, subtraction, division and multiplication.</p>
+<pre><code>integer = 10
+decimal_number = 2.5
+sum_variable = integer + decimal_number
+difference = integer - decimal_number
+product_variable = integer * decimal_number
+</code></pre>
+<p>As you can see, the variables above hold the result of the operation corresponding to their names. For example, <code>difference</code> now contains the value of <code>7.5</code>. An important feature of variables is that if you change one variable, all other variables that depend on it will change too: In this case, if we were to initialise <code>integer</code> to <code>8</code> instead of <code>10</code>, the values of <code>sum_variable</code>, <code>difference</code> and <code>product_variable</code> would change too.</p>
+<p>When initialising a variable to a number you can use parentheses just like you would do in algebra. Try to run the code below to confirm that the answer is correct:</p>
+<pre><code>decimal_number = (10 * 6.17) / 4.9 - 5
+
+puts decimal_number
+</code></pre>
+<p>There are many reasons why variables are extremely useful. Consider this simple example:</p>
+<blockquote>
+<p>You are an owner of a shop that only sells 1 type of product and you're currently having a sale. For each customer, you know the amount of the product they want to buy, the price and the discount. The thing you want to calculate is the amount of money the customer will have to pay for their order.</p>
+</blockquote>
+<p>Here is how we you can implement it:</p>
+<pre><code># Price of a single product
+price = 20
+
+# Discount in %
+discount = 10
+
+# Quantity to be bought
+quantity = 20
+
+# Now we begin our calculation
+price_after_discount = price * (100 - discount) / 100
+
+amount_to_pay = price_after_discount * quantity
+
+# And finally we print the answer
+puts amount_to_pay
+</code></pre>
+<p>Now that the code is ready, you can just change the value of <code>price</code>, <code>discount</code> or <code>quantity</code> to any other values and your program will calculate the rest for you. As you will find out in later tutorials, there are much better ways to do it but this solution will do for now.</p>
+<h3 id="some-examples-for-you-to-try">Some examples for you to try</h3>
+<p>First of all, let's see if you understand how operations with numbers work in Ruby. Try to predict the output of this simple program:</p>
+<pre><code>number_1 = 10
+number_2 = 24
+number_3 = number_2 * 2 - number_1 * 3
+
+result = (number_3 + number_1) / 7
+
+puts result
+</code></pre>
+<p>Now try to execute this code is see if you were correct.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../getting-input/" class="btn btn-neutral float-right" title="Output and user input">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../" class="btn btn-neutral" title="Outline"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../getting-input/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

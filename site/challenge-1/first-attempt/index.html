@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>First attempt at the game - Group X Ruby</title>
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "First attempt at the game";
+    var mkdocs_page_input_path = "challenge-1/first-attempt.md";
+    var mkdocs_page_url = "/challenge-1/first-attempt/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Group X Ruby</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Introduction</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Getting Started</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting-started/">Installation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting-started/scripts/">Running scripts</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>First Challenge</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../">Outline</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../variables-types/">Working with variables</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../getting-input/">Output and user input</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">First attempt at the game</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#first-proper-program">First proper program</a></li>
+                
+                    <li><a class="toctree-l4" href="#putting-everything-together">Putting everything together</a></li>
+                
+                    <li><a class="toctree-l4" href="#what-you-need-to-do">What you need to do</a></li>
+                
+                    <li><a class="toctree-l4" href="#building-instructions">Building instructions</a></li>
+                
+                    <li><a class="toctree-l4" href="#now-try-the-same-with-the-next-two-questions">now try the same with the next two questions.</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#the-final-code">The Final Code</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../loops/">Loops</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../arrays/">Arrays</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../hashes/">Hashes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../scopes/">Scopes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../built-in-methods/">Built-in methods</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../creating-skeleton/">Creating a skeleton for the game</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../completing-challenge/">Completing challenge #1</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Second Challenge</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../challenge-2/">Outline</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../challenge-2/OOP/">Basics of OOP</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../challenge-2/encapsulation/">Inheritance, encapsulation and polymorphism</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Group X Ruby</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>First Challenge &raquo;</li>
+        
+      
+    
+    <li>First attempt at the game</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="first-proper-program">First proper program</h1>
+<p>In this part of the ruby tutorial you are going to learn on how to build a simple program, from the skills that you have gathered.
+The first problem you are going to solve will be a quiz that will ask 3 questions about Japanese language and then output the player
+their final score.</p>
+<h2 id="putting-everything-together">Putting everything together</h2>
+<p>You might have been wondering why learn ruby? what are its applications? how is anything I learned even useful?</p>
+<p>Now even though you covered only a minor proportion of ruby, real result can be seen already, and this is why we will practice building this program.
+Over the course of this time you have learned how to use functions, variables and how to use inputs and outputs.
+now you are going to put your new learned skills in practice.</p>
+<h2 id="what-you-need-to-do">What you need to do</h2>
+<p>here is the plan of the quiz:</p>
+<pre><code>Quiz details
+
+Challenge No.1, Quiz questions
+  1.How do you say "Hello" in Japanese?
+  2.What is the literal translation of Tokyo?
+  3.Identify a choice that has both "yes" and "no" in Japanese?
+</code></pre>
+<hr />
+<pre><code>Challenge No.1, Quiz choices
+1.
+  1.Hallo
+  2.Konichiwa
+  3.Oyasumi
+  4.Itadakimasu
+  5.Ja Mate
+2.
+  1.Land of rising sun
+  2.Capital
+  3.Crazy place
+  4.East capital
+  5.Land of progress
+3.
+  1.hai, ii
+  2.ai, pie
+  3.yes, no
+  4.hai, iie
+  5.ha, ei
+</code></pre>
+<hr />
+<pre><code>Challenge No.1, Quiz answers
+  1.Konichiwa
+  2.East capital
+  3.hai, iie
+</code></pre>
+<h2 id="building-instructions">Building instructions</h2>
+<p>So, lets start building :) !!</p>
+<pre><code>puts "1. Hallo"
+puts "2. Konichiwa"
+puts "3. Oyasumi"
+puts "4. Itadakimasu"
+puts "5. Ja Mate"
+puts
+</code></pre>
+<p>now look at the code above, you probably already know what it is supposed to do. What the code above does is outputs the first list of questions for the first
+question in the quiz which is then followed by a line break.</p>
+<p>Save this code in your editor and lets continue.
+(you can run the program to see the actual output. just double click on saved file)</p>
+<hr />
+<p>what we want to do next is declare a couple of global variables</p>
+<pre><code>$questionNumber = 1
+$score = 0
+</code></pre>
+<p>write this code prior to what you have already written, this will declare two global variables, one will keep track of the questionNumber the user is currently on
+and the other will keep the score.</p>
+<hr />
+<p>to ease the process of building a quiz we are going to use functions
+so lets write these two functions</p>
+<pre><code>def nextQuestion
+  print "#{$questionNumber}. "
+  $questionNumber += 1
+end
+</code></pre>
+<p>the function above will increment the global variable that keeps track of the question number as well as outputting the current number.
+This means that we wouldnt have to write the question number our selves and more questions can be easily added at any time.</p>
+<pre><code>def processAnswer(choice, num)
+  puts
+  if choice==num
+ $score += 1
+ puts "correct"
+  else
+puts "INCORRECT"
+  end
+  puts
+end
+</code></pre>
+<p>This second function takes two parameters, one will be the choice that the user has selected as the answer and the other will be the actual answer.</p>
+<p>Now what this function will actually do is compare both values and if they match, the function will output "correct" and increment the users score. If the values dont match however, the output will be "INCORRECT" and the score wont be incremented.</p>
+<hr />
+<p>Now you have learned how to use input and output, so after outputing the first set of questions, insert this code</p>
+<pre><code>choice = gets.to_i
+</code></pre>
+<p>now what this will do is set a variable named choice, which will hold the users input, to what the input actually is (converted to an integer type using .to_i)</p>
+<hr />
+<p>lets put everything together and make the first quiz question.</p>
+<pre><code>$questionNumber = 1
+$score = 0
+
+def nextQuestion
+  print "#{$questionNumber}. "
+  $questionNumber += 1
+end
+
+def processAnswer(choice, num)
+  puts
+  if choice==num
+ $score += 1
+ puts "correct"
+  else
+puts "INCORRECT"
+  end
+  puts
+end
+
+nextQuestion
+puts "How do you say \"Hello\" in Japanese?"
+puts
+
+puts "1. Hallo"
+puts "2. Konichiwa"
+puts "3. Oyasumi"
+puts "4. Itadakimasu"
+puts "5. Ja Mate"
+puts
+
+choice = gets.to_i
+
+processAnswer(choice, 2)
+</code></pre>
+<p>look at the code above, as you can see we made use of functions like processAnswer(choice, 2) and nextQuestion, this code shouldnt be difficult to understand.</p>
+<p>you might have noticed that Hello has \" written instead of just ", now this is because ruby will think that we want to end quotation marks if we just use ", so we say \" to tell ruby that its just a character to be outputted on screen.</p>
+<h2 id="now-try-the-same-with-the-next-two-questions">now try the same with the next two questions.</h2>
+<p>Once you have done everything it is just the ending that is left.</p>
+<pre><code>puts "You got #{$score} in the quiz correct"
+
+$end
+</code></pre>
+<p>enter this code so that  user will get the output of his/her score. The $end will make sure ruby terminates.</p>
+<h1 id="the-final-code">The Final Code</h1>
+<hr />
+<pre><code>$questionNumber = 1
+$score = 0
+
+def nextQuestion
+  print "#{$questionNumber}. "
+  $questionNumber += 1
+end
+
+def processAnswer(choice, num)
+  puts
+  if choice==num
+ $score += 1
+ puts "correct"
+  else
+puts "INCORRECT"
+  end
+  puts
+end
+
+nextQuestion
+puts "How do you say \"Hello\" in Japanese?"
+puts
+
+puts "1. Hallo"
+puts "2. Konichiwa"
+puts "3. Oyasumi"
+puts "4. Itadakimasu"
+puts "5. Ja Mate"
+puts
+
+choice = gets.to_i
+
+processAnswer(choice, 2)
+nextQuestion
+puts "What is the literal translation of Tokyo?"
+puts
+
+puts "1. Land of rising sun"
+puts "2. Capital"
+puts "3. Crazy place"
+puts "4. East capital"
+puts "5. Land of progress"
+puts
+
+choice = gets.to_i
+
+processAnswer(choice, 4)
+nextQuestion
+puts "Identify a choice that has both \"yes\" and \"no\" in japanese?"
+puts
+
+puts "1. hai, ii"
+puts "2. ai, pie"
+puts "3. yes, no"
+puts "4. hai, iie"
+puts "5. ha, ei"
+puts
+
+choice = gets.to_i
+
+processAnswer(choice,4)
+puts "You got #{$score} in the quiz correct"
+
+$end
+</code></pre>
+<hr />
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../loops/" class="btn btn-neutral float-right" title="Loops">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../getting-input/" class="btn btn-neutral" title="Output and user input"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../getting-input/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../loops/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

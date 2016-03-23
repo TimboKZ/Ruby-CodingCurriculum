@@ -1,1 +1,0 @@
-# Group X Ruby: Challenge #2

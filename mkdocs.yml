@@ -1,0 +1,25 @@
+site_name: Group X Ruby
+pages:
+- Introduction: index.md
+- Getting Started:
+    - 'Installation': 'getting-started/index.md'
+    - 'Running scripts': 'getting-started/scripts.md'
+- First Challenge:
+    - 'Outline': 'challenge-1/index.md'
+    - 'Working with variables': 'challenge-1/variables-types.md'
+    - 'Output and user input': 'challenge-1/getting-input.md'
+    - 'First attempt at the game': 'challenge-1/first-attempt.md'
+    - 'Loops': 'challenge-1/loops.md'
+    - 'Arrays': 'challenge-1/arrays.md'
+    - 'Hashes': 'challenge-1/hashes.md'
+    - 'Scopes': 'challenge-1/scopes.md'
+    - 'Built-in methods': 'challenge-1/built-in-methods.md'
+    - 'Completing challenge #1': 'challenge-1/completing-challenge.md'
+- Second Challenge:
+    - 'Outline': 'challenge-2/index.md'
+    - 'Basics of OOP': 'challenge-2/OOP.md'
+    - 'Inheritance, encapsulation and polymorphism': 'challenge-2/encapsulation.md'
+    - 'Scaffolding a program': 'challenge-2/planning.md'
+    - 'Creating the skeleton program': 'challenge-2/game-skeleton.md'
+    - 'Completing challenge #2': 'challenge-2/complete-challenge-2.md'
+theme: readthedocs

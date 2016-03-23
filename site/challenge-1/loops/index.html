@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Loops - Group X Ruby</title>
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Loops";
+    var mkdocs_page_input_path = "challenge-1/loops.md";
+    var mkdocs_page_url = "/challenge-1/loops/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Group X Ruby</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Introduction</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Getting Started</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting-started/">Installation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting-started/scripts/">Running scripts</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>First Challenge</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../">Outline</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../variables-types/">Working with variables</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../getting-input/">Output and user input</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../first-attempt/">First attempt at the game</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Loops</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#what-is-a-loop">What is a loop?</a></li>
+                
+                    <li><a class="toctree-l4" href="#while">while</a></li>
+                
+                    <li><a class="toctree-l4" href="#there-are-many-loops">There are many loops</a></li>
+                
+                    <li><a class="toctree-l4" href="#until">until</a></li>
+                
+                    <li><a class="toctree-l4" href="#for">for</a></li>
+                
+                    <li><a class="toctree-l4" href="#break">break</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../arrays/">Arrays</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../hashes/">Hashes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../scopes/">Scopes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../built-in-methods/">Built-in methods</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../creating-skeleton/">Creating a skeleton for the game</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../completing-challenge/">Completing challenge #1</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Second Challenge</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../challenge-2/">Outline</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../challenge-2/OOP/">Basics of OOP</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../challenge-2/encapsulation/">Inheritance, encapsulation and polymorphism</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Group X Ruby</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>First Challenge &raquo;</li>
+        
+      
+    
+    <li>Loops</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="what-is-a-loop">What is a loop?</h1>
+<p>Loops can be used when you want to repeatedly do things.
+For example, I would like to have 5 lines of <strong>"Ruby is awesome!"</strong>, instead of typing 5 times we can use a loop to help us achieve this. The most basic loop of all is a <em>while</em> loop Let's create a file and name it, here we do <strong><em><em>While.rb</em></em></strong></p>
+<h2 id="while"><strong><em><em>while</em></em></strong></h2>
+<pre><code>while conditional (do)
+
+    code
+
+end
+
+--------or-------
+
+begin
+
+    code
+
+end while conditional
+</code></pre>
+<p>Let's look at a specific example:</p>
+<pre><code>counter = 0
+
+while counter &lt; 5
+
+    puts "Ruby is awesome!"
+
+    counter++
+
+end
+</code></pre>
+<p>Also you can write:</p>
+<pre><code>counter = 0
+
+begin
+
+    puts "Ruby is awesome!"
+
+    counter++
+
+end while counter &lt; 5
+</code></pre>
+<p>Run the program, on the terminal you will see:</p>
+<pre><code>Ruby is awesome!
+Ruby is awesome!
+Ruby is awesome!
+Ruby is awesome!
+Ruby is awesome!
+</code></pre>
+<p>In this case</p>
+<ul>
+<li>
+<p><strong>counter &lt; 5</strong> is the condition</p>
+</li>
+<li>
+<p><strong>puts "Ruby is awesome!"</strong> is the loop body.</p>
+</li>
+</ul>
+<p>The loop body will continuously repeating if the condition is <strong>true</strong>, stop until the condition is <strong>false</strong>. </p>
+<p>At the beginning <strong>counter = 0</strong>, 0 is less than 5 so the condition is true then we will get into the loop body to process the <strong><em><em>puts</em></em></strong> method, after we finish we do <strong>counter++</strong>, which means counter plus 1, so now <strong>counter = 1</strong>, it is still true, we go back to the start of the loop, do the puts method second time, keep doing this until counter = 5, when the condition is false, okay we jump out of the while loop and goes to <strong>"end"</strong>, the program is complete when it reaches <strong>"end"</strong>.</p>
+<h2 id="there-are-many-loops">There are many loops</h2>
+<p><code>While</code> loop is the most basic of all loops but it is rather "inconvenient" to use for everything. Therefore, Ruby comes equipped with a variety of ways to declare loops that will help making your code more straight forward.</p>
+<h2 id="until"><strong><em><em>until</em></em></strong></h2>
+<p>The <strong><em><em>until</em></em></strong> loop is a alternative way which does exactly the same thing as <strong><em><em>while</em></em></strong> does. An <strong><em><em>until</em></em></strong> loop will repeat until the condition is <strong>true</strong>, i.e stops when the condition is <strong>true</strong>.</p>
+<pre><code>until conditional (do)
+
+    code
+
+end
+
+--------or--------
+
+begin
+
+    code
+
+end until conditional
+</code></pre>
+<p>A more specific example of <strong><em><em>until</em></em></strong> method:</p>
+<pre><code>counter = 0
+
+    until counter &gt; 5
+
+    puts counter
+
+    counter++
+
+end
+</code></pre>
+<p>Same as before you can put <strong><em><em>until</em></em></strong> at the end:</p>
+<pre><code>counter = 0
+
+begin
+
+    puts counter
+
+    counter++
+
+end until counter &gt; 5
+</code></pre>
+<p>The output on the terminal is:</p>
+<pre><code>0
+1
+2
+3
+4
+5
+</code></pre>
+<hr />
+<h2 id="for"><strong><em><em>for</em></em></strong></h2>
+<p>The <strong><em><em>for</em></em></strong> loop is another way of doing loops, it has the structure of:</p>
+<pre><code>for variable (,variable...) in expression (do)
+
+    code
+
+end
+</code></pre>
+<p>Let's see an example:</p>
+<pre><code>for x in 0..3
+
+    puts "X is #{x}"
+
+end
+</code></pre>
+<p>On the terminal:</p>
+<pre><code>X is 0
+X is 1
+X is 2
+X is 3
+</code></pre>
+<hr />
+<p><strong><em><em>Each</em></em></strong></p>
+<p>In ruby, there is another method does exactly the same thing as <strong><em><em>for..in</em></em></strong> does, it's structure is like this:</p>
+<pre><code>(expression).each (do) |variable(,variable...)|
+
+    code
+
+end
+</code></pre>
+<p>Let's do the same example:</p>
+<pre><code>(0..5).each do |x|
+
+    puts "X is #{x}"
+
+end
+</code></pre>
+<p>On the terminal:</p>
+<pre><code>X is 0
+X is 1
+X is 2
+X is 3
+</code></pre>
+<h2 id="break"><strong><em><em>break</em></em></strong></h2>
+<p>Break will stop the loops.</p>
+<p>for example:</p>
+<pre><code>for x in 0..3
+
+    if x &gt; 2 then
+
+        break
+
+    end
+
+    puts "X is #{x}"
+
+end
+</code></pre>
+<p>On the terminal:</p>
+<pre><code>X is 0
+X is 1
+X is 2
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../arrays/" class="btn btn-neutral float-right" title="Arrays">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../first-attempt/" class="btn btn-neutral" title="First attempt at the game"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../first-attempt/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../arrays/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
